@@ -249,7 +249,7 @@ public class MainActivity extends AppCompatActivity implements
 //                        sendMessage(arrayStream);
 //                    }
 //                }).start();
-                System.out.println(new String(arrayStream));
+                //System.out.println(new String(arrayStream));
                 bytesRead = file.read(arrayStream);
             }
             System.out.println("File sent successfully.");
