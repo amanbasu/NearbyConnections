@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="4dp"
+    tools:context="com.apposite.nearbyconnections.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:elevation="4dp"
+        android:layout_margin="4dp"
+        android:layout_weight="1"
+        android:id="@+id/scrollChat">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnStartAd"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="63dp"
+                android:id="@+id/tvMessage"
+                android:gravity="center_horizontal"
+                android:text="Your Messages will be shown here"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textSize="18sp" />
+
+            <Button
+                android:text="Advertise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnStartAd"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textSize="18sp"
+                android:textAllCaps="false" />
+
+            <Button
+                android:text="Discover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnStartDis"
+                android:textAllCaps="false"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textSize="18sp" />
+
+            <Button
+                android:text="Send an Image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnGallery"
+                android:textAllCaps="false"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:elevation="4dp"
+        android:background="#fff"
+        android:fadingEdge="horizontal"
+        android:padding="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textAutoComplete|textEmailAddress"
+                android:ems="10"
+                android:id="@+id/etMessage"
+                android:layout_weight="1"
+                android:hint="Enter a Message"
+                style="@style/Widget.AppCompat.AutoCompleteTextView"
+                android:fontFamily="sans-serif-smallcaps"
+                android:layout_marginStart="4dp" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/btnSend"
+                android:src="@drawable/send"
+                android:background="#fff"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>
